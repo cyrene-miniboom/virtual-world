@@ -40,6 +40,13 @@ code {
   border-radius: .45rem;
 }
 
+.video-frame iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 24px;
+}
+
 .skip-link {
   position: absolute;
   left: -999px;
