@@ -70,10 +70,11 @@
       </div>
       <div class="shell">
         <div class="video-frame">
-          <video class="demo-video" controls poster="assets/demo-poster.svg" preload="metadata">
-            <source src="assets/demo.mp4" type="video/mp4" />
-            当前浏览器不支持 HTML5 视频播放。请下载 assets/demo.mp4 查看演示。
-          </video>
+          <iframe
+                    class="demo-video"
+                    src="https://player.bilibili.com/player.html?bvid=你的BV号&page=1"
+                    allowfullscreen>
+          </iframe>
           <div class="video-note">
             <strong>替换提示：</strong>保持文件名为 <code>assets/demo.mp4</code>，无需修改网页代码；如需使用外链视频，可把这里改成 iframe 嵌入。
           </div>
