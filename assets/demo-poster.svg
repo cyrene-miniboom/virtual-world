@@ -1,0 +1,33 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(590 360) rotate(27) scale(720 390)">
+      <stop stop-color="#ffefef"/>
+      <stop offset="0.45" stop-color="#d63b4b"/>
+      <stop offset="1" stop-color="#15172d"/>
+    </radialGradient>
+    <linearGradient id="tube" x1="73" y1="121" x2="1135" y2="642" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff4154"/>
+      <stop offset="0.45" stop-color="#ffd6a5"/>
+      <stop offset="1" stop-color="#5467ff"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g1)"/>
+  <path d="M100 440C230 240 355 232 496 318C637 405 661 484 808 454C955 424 1009 244 1190 244" stroke="url(#tube)" stroke-width="132" stroke-linecap="round" filter="url(#shadow)" opacity="0.88"/>
+  <path d="M100 440C230 240 355 232 496 318C637 405 661 484 808 454C955 424 1009 244 1190 244" stroke="#fff" stroke-width="34" stroke-linecap="round" opacity="0.16"/>
+  <g opacity="0.75">
+    <ellipse cx="262" cy="327" rx="54" ry="32" transform="rotate(-24 262 327)" fill="#ff5b68" stroke="#8a0f1c" stroke-width="8"/>
+    <ellipse cx="348" cy="408" rx="43" ry="25" transform="rotate(17 348 408)" fill="#ff6a72" stroke="#8a0f1c" stroke-width="7"/>
+    <circle cx="851" cy="388" r="44" fill="#d9ebff" stroke="#3b79c8" stroke-width="8"/>
+    <path d="M836 384C861 359 890 381 874 408C858 438 805 419 823 395C826 391 831 388 836 384Z" fill="#2e84c7" opacity="0.9"/>
+    <circle cx="992" cy="284" r="18" fill="#fff5a4"/>
+    <circle cx="1028" cy="298" r="14" fill="#fff5a4"/>
+    <circle cx="964" cy="320" r="12" fill="#fff5a4"/>
+  </g>
+  <circle cx="640" cy="360" r="82" fill="rgba(255,255,255,.88)"/>
+  <path d="M616 319L689 360L616 401V319Z" fill="#d63b4b"/>
+  <text x="640" y="548" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="48" font-weight="800" fill="#ffffff">视频展示区</text>
+  <text x="640" y="597" text-anchor="middle" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="24" fill="#f5d6da">将演示视频命名为 assets/demo.mp4 即可替换此占位图</text>
+</svg>

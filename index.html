@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>血液微观漫游｜GitHub 项目介绍页</title>
+  <meta name="description" content="基于《血液微观漫游》课程设计文档制作的 GitHub Pages 项目介绍网页，展示人体血管与血细胞科普漫游的场景规划、路线设计与视频展示位。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header" aria-label="项目导航">
+    <nav class="nav shell">
+      <a class="brand" href="#hero" aria-label="血液微观漫游首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>血液微观漫游</span>
+      </a>
+      <div class="nav-links" aria-label="页面内导航">
+        <a href="#demo">视频展示</a>
+        <a href="#route">路线</a>
+        <a href="#scenes">场景</a>
+        <a href="#build">建造规范</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero section">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="cell cell-red one"></span>
+        <span class="cell cell-red two"></span>
+        <span class="cell cell-white"></span>
+        <span class="platelet p-one"></span>
+        <span class="platelet p-two"></span>
+      </div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">3D 数字化创新设计 · 科普展示型微观漫游</p>
+          <h1>进入人体血管，跟随血流完成一次微观旅程</h1>
+          <p class="lead">本项目将“人体血管与血细胞科普漫游”设计为单线式互动展示：从动脉入口出发，经过毛细交换区，最终抵达静脉回流与修复区，让参观者在低复杂度空间中理解血液循环、物质交换与血管修复。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#demo">查看视频展示位</a>
+            <a class="btn ghost" href="#route">浏览路线规划</a>
+          </div>
+          <dl class="stats" aria-label="项目关键数据">
+            <div><dt>岛屿尺寸</dt><dd>256m × 256m</dd></div>
+            <div><dt>核心场景</dt><dd>3 个</dd></div>
+            <div><dt>过渡通道</dt><dd>2 段</dd></div>
+          </dl>
+        </div>
+        <aside class="hero-card" aria-label="项目摘要卡片">
+          <div class="pulse-ring" aria-hidden="true"></div>
+          <h2>Project Snapshot</h2>
+          <p>主游线采用“入口平台 → 动脉通道 → 毛细交换区 → 静脉回流与修复区 → 终点回流门”的线性结构。</p>
+          <ul>
+            <li>半开放/剖面式血管，适合第三人称视角</li>
+            <li>红细胞、白细胞、血小板三类模型放大展示</li>
+            <li>说明牌、地面箭头、发光点组成低脚本教学交互</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="demo" class="section demo-section">
+      <div class="shell section-heading">
+        <p class="eyebrow">Demo Video</p>
+        <h2>视频展示处</h2>
+        <p>这里预留项目演示视频位置。将最终录屏或漫游视频命名为 <code>demo.mp4</code>，放入 <code>assets/</code> 目录，即可在 GitHub Pages 上直接播放。</p>
+      </div>
+      <div class="shell">
+        <div class="video-frame">
+          <video class="demo-video" controls poster="assets/demo-poster.svg" preload="metadata">
+            <source src="assets/demo.mp4" type="video/mp4" />
+            当前浏览器不支持 HTML5 视频播放。请下载 assets/demo.mp4 查看演示。
+          </video>
+          <div class="video-note">
+            <strong>替换提示：</strong>保持文件名为 <code>assets/demo.mp4</code>，无需修改网页代码；如需使用外链视频，可把这里改成 iframe 嵌入。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <div class="shell two-col">
+        <div>
+          <p class="eyebrow">Concept</p>
+          <h2>项目概述</h2>
+          <p>玩家作为观察者进入血管内部，沿血流完成一次面向科普讲解的微观漫游。体验不追求医学显微级复原，而是把动脉输送、毛细交换、静脉回流、免疫巡逻与血小板修复转化为清晰、可讲解、易搭建的空间叙事。</p>
+          <p>为了控制工作量，整体方案压缩为 3 个核心场景和 2 段过渡通道；不设计复杂建筑群、不依赖大规模脚本，重点用颜色、模型、说明牌和路线节奏表达知识点。</p>
+        </div>
+        <div class="glass-card checklist">
+          <h3>最低交付目标</h3>
+          <ul>
+            <li>完整走通 3 个场景</li>
+            <li>完成红细胞、白细胞、血小板 3 类模型</li>
+            <li>至少设置 6 块说明牌</li>
+            <li>主色清晰区分：暖红、浅金/浅粉、蓝紫</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="route" class="section route-section">
+      <div class="shell section-heading">
+        <p class="eyebrow">Route & Layout</p>
+        <h2>单线式岛屿路线</h2>
+        <p>全岛以西南角为 (0,0)，东北角为 (256,256)。路线从西北侧动脉入口进入，经中部毛细交换区，最终到东南侧静脉回流与修复区。</p>
+      </div>
+      <div class="shell media-grid">
+        <figure class="image-card wide">
+          <img src="assets/island-master-plan.png" alt="血流微观漫游岛屿总平面示意图，展示动脉入口区、毛细交换区和静脉回流与修复区" />
+          <figcaption>岛屿总平面：入口平台 → 动脉通道 → 毛细交换区 → 静脉回流与修复区 → 终点回流门</figcaption>
+        </figure>
+        <div class="route-cards" aria-label="路线节点">
+          <article><span>A</span><h3>动脉入口区</h3><p>中心坐标 (54,210)，暖红厚壁通道，突出输送感与红细胞携氧。</p></article>
+          <article><span>B</span><h3>毛细交换区</h3><p>中心坐标 (133,130)，使用浅粉/浅金过渡色，展示氧气、营养与代谢废物交换。</p></article>
+          <article><span>C</span><h3>静脉回流与修复区</h3><p>中心坐标 (197,70)，蓝紫色回流通道，展示白细胞巡逻与血小板止血修复。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenes" class="section">
+      <div class="shell section-heading">
+        <p class="eyebrow">Three Acts</p>
+        <h2>三幕场景设计</h2>
+      </div>
+      <div class="shell scene-grid">
+        <article class="scene-card artery">
+          <span class="tag">Act 01</span>
+          <h3>动脉入口区</h3>
+          <p>红色厚壁半开放通道，入口平台连接主游线。场景中布置放大的红细胞模型和横截面展示面，说明动脉将血液从心脏带向身体各处。</p>
+          <ul>
+            <li>通道宽 10–12m，步行净宽 ≥ 6m</li>
+            <li>红细胞大号 3 个、中号 3 个</li>
+            <li>说明牌：动脉输送、红细胞携氧</li>
+          </ul>
+        </article>
+        <article class="scene-card capillary">
+          <span class="tag">Act 02</span>
+          <h3>毛细交换区</h3>
+          <p>用主通道加短侧枝模拟毛细分流，避免复杂迷宫。三个停留点对应氧气交换、营养交换和废物回收，是全岛知识核心区。</p>
+          <ul>
+            <li>主通道 3–4 段，保持可行走</li>
+            <li>装饰性分支 4–6 条</li>
+            <li>组织图示面板与交换点标记</li>
+          </ul>
+        </article>
+        <article class="scene-card vein">
+          <span class="tag">Act 03</span>
+          <h3>静脉回流与修复区</h3>
+          <p>主色转为蓝紫，表现血液回流。通过白细胞模型表现免疫巡逻，通过受损血管壁与聚集血小板展示止血修复。</p>
+          <ul>
+            <li>静脉通道 4–5 段，末端设回流门</li>
+            <li>白细胞模型 2 个</li>
+            <li>血小板 5–6 个聚集成修复状态</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="science" class="section science-section">
+      <div class="shell media-grid reverse">
+        <div>
+          <p class="eyebrow">Visual References</p>
+          <h2>医学内容转化为可视化对象</h2>
+          <p>网页保留了文档中的参考图，方便团队在 GitHub 页面中直接查看核心视觉依据：动脉、毛细血管、静脉横截面对比，以及红细胞、白细胞、血小板参考形象。</p>
+          <div class="mini-grid">
+            <div><strong>红细胞</strong><span>扁圆、中心略凹，主要承担氧气运输。</span></div>
+            <div><strong>白细胞</strong><span>偏浅色、不规则体积，用于表现免疫巡逻。</span></div>
+            <div><strong>血小板</strong><span>小型碎片状，成群聚集表现止血修复。</span></div>
+          </div>
+        </div>
+        <div class="image-stack">
+          <figure class="image-card">
+            <img src="assets/artery-capillary-vein.png" alt="动脉、毛细血管、静脉横截面参考图" />
+            <figcaption>血管横截面参考</figcaption>
+          </figure>
+          <figure class="image-card lift">
+            <img src="assets/blood-cells-reference.png" alt="红细胞、白细胞、血小板参考形象" />
+            <figcaption>血细胞参考形象</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="build" class="section build-section">
+      <div class="shell section-heading">
+        <p class="eyebrow">Build Strategy</p>
+        <h2>建造与实现规范</h2>
+        <p>页面把课程文档中的搭建策略整理为可执行清单，便于直接写入 GitHub 项目说明或开发日志。</p>
+      </div>
+      <div class="shell spec-grid">
+        <article>
+          <h3>模块化血管</h3>
+          <p>直线段建议 12–16m 一段，弯段单独制作，便于复制、拼接与修改。</p>
+        </article>
+        <article>
+          <h3>第三人称友好</h3>
+          <p>采用半开放或剖面式血管，避免封闭洞穴顶镜头；通道保持足够视野。</p>
+        </article>
+        <article>
+          <h3>地形统一覆盖</h3>
+          <p>用暗红、灰红组织底面和低雾遮盖默认地形，避免保留原始草地或空白土面。</p>
+        </article>
+        <article>
+          <h3>低脚本交互</h3>
+          <p>基础版只需可走通、可看清、可说明；触碰提示、粒子和语音可作为增强项。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="github" class="section github-section">
+      <div class="shell github-card">
+        <div>
+          <p class="eyebrow">GitHub Pages Ready</p>
+          <h2>部署方式</h2>
+          <p>将本文件夹上传到 GitHub 仓库根目录，开启 Pages 后即可发布。演示视频放到 <code>assets/demo.mp4</code>，刷新网页即可显示。</p>
+        </div>
+        <ol class="deploy-steps">
+          <li>上传 <code>index.html</code>、<code>styles.css</code> 和 <code>assets/</code></li>
+          <li>进入仓库 <strong>Settings → Pages</strong></li>
+          <li>选择 <strong>Deploy from a branch</strong>，分支选 <strong>main / root</strong></li>
+          <li>等待 GitHub Pages 生成公开链接</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>© 血液微观漫游 · 课程项目介绍页</p>
+      <a href="#hero">返回顶部 ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
